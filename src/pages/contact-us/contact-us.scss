@@ -1,0 +1,107 @@
+@use '../../styles/components/variables' as *;
+@use '../../styles/components/mixin' as *;
+
+.contact-us-page {
+    .main-image-section {
+        position: relative;
+
+        img {
+            min-height: 340px;
+            width: 100%;
+            object-fit: cover;
+            @include media-breakpoint-down-lg {
+                min-height: 180px;
+            }
+        }
+
+        .main-content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            @include media-breakpoint-down-md {
+                left: 20px;
+                transform: translate(-0%, -50%);
+            }
+
+            h1 {
+                font-size: 60px;
+                color: $white;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+
+                @include media-breakpoint-down-xxl {
+                    font-size: 50px;
+                }
+
+                @include media-breakpoint-down-lg {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .contact-us-main {
+        background-color: $night-black;
+        padding-block: 100px;
+        @include media-breakpoint-down-lg {
+            padding-block: 50px;
+        }
+        .card-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            .image {
+                min-width: 65px;
+                width: 65px;
+                height: 65px;
+                background: $gray2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+
+                @include media-breakpoint-down-xl {
+                    min-width: 45px;
+                    width: 45px;
+                    height: 45px;
+                }
+
+                img {
+                    max-width: 30px;
+                    filter: brightness(0) saturate(100%) invert(39%) sepia(83%) saturate(2639%) hue-rotate(7deg) brightness(101%) contrast(101%);
+
+                    @include media-breakpoint-down-xl {
+                        max-width: 20px;
+                    }
+                }
+            }
+        }
+
+        .contact-form {
+            .input {
+                margin-bottom: 20px;
+
+                input,
+                textarea {
+                    width: 100%;
+                    background-color: transparent;
+                    border: 1px solid $gray2;
+                    padding: 15px;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 500;
+
+                    &::placeholder {
+                        color: $gray1;
+                    }
+                }
+            }
+        }
+    }
+
+}

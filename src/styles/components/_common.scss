@@ -1,0 +1,31 @@
+@use './variables' as *;
+@use './mixin' as *;
+
+.breadcrumbs {
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        justify-content: center;
+
+        a {
+            color: $white;
+            font-size: 18px;
+            font-weight: 700;
+
+            svg {
+                margin-left: 5px;
+                font-size: 13px;
+            }
+        }
+
+        .current-page {
+            color: $primary;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+.row {
+    gap: 20px 0;
+}
