@@ -2,12 +2,12 @@
 @use './mixin' as *;
 
 * {
-    font-family: 'Muli';
+    font-family: 'heebo';
     scrollbar-width: thin !important;
 }
 
 body {
-    font-family: 'Muli';
+    font-family: 'heebo';
     font-size: 16px;
     background-color: $white;
     font-weight: 400;
@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    font-family: 'Muli';
+    font-family: 'heebo';
     text-decoration: none;
 
     &:hover {
@@ -52,7 +52,7 @@ span {
 
 p,
 span {
-    font-family: 'Muli';
+    font-family: 'heebo';
     color: $gray1;
 }
 
@@ -60,25 +60,25 @@ button {
     background-color: transparent;
     border: 0;
     outline: none;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 
 h1,
 .h1 {
-    font-family: 'Oswald';
+    font-family: 'heebo';
     font-weight: 700;
     font-size: 80px;
     line-height: 90px;
     margin-bottom: 15px;
 
-    @include media-breakpoint-down-md {
+    @include media-breakpoint-down-lg {
         font-size: 48px;
         line-height: normal;
     }
 
     @include media-breakpoint-down-sm {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     * {
@@ -88,8 +88,9 @@ h1,
 
 h2,
 .h2 {
-    font-family: 'Oswald';
-    font-size: 32px;
+    font-family: 'heebo';
+    font-size: 40px;
+    line-height: 44px;
     font-weight: 600;
     line-height: normal;
 
@@ -109,7 +110,7 @@ h2,
 
 h3,
 .h3 {
-    font-family: 'Oswald';
+    font-family: 'heebo';
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
@@ -126,7 +127,7 @@ h3,
 
 h4,
 .h4 {
-    font-family: 'Oswald';
+    font-family: 'heebo';
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
@@ -153,7 +154,7 @@ h4,
 
 h6,
 .h6 {
-    font-family: 'Oswald';
+    font-family: 'heebo';
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
