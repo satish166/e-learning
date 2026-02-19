@@ -1,0 +1,86 @@
+@use '../../styles/components/variables' as *;
+@use '../../styles/components/mixin' as *;
+
+.footer {
+    background: $black;
+    padding-block: 50px;
+
+    .row {
+        gap: 20px 0;
+    }
+
+    p,
+    a,
+    h6 {
+        color: $white;
+    }
+
+    .left-section {
+        .content {
+            p {
+                margin-block: 30px;
+                font-weight: 200;
+                line-height: 26px;
+                color: $gray1;
+                font-size: 14px;
+            }
+        }
+
+        .social-links {
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 15px;
+                margin-bottom: 0;
+                padding-left: 0;
+
+                img {
+                    max-width: 15px;
+                    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+                }
+            }
+        }
+    }
+
+    .footer-links {
+        h6 {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        a {
+            color: $gray1;
+            font-size: 14px !important;
+            font-weight: 200;
+            line-height: 30px;
+        }
+    }
+
+    .comment-section {
+        display: flex;
+        margin-block: 5px;
+
+        p {
+            font-size: 12px;
+            color: $gray4;
+            display: inline-block;
+            margin-right: 25px;
+            position: relative;
+            font-family: 'Oswald';
+            letter-spacing: 0.5px;
+        }
+    }
+    .fitness-section {
+        border-top: 1px solid $gray5;
+        padding-top: 15px;
+    }
+    .fitness-text {
+        color: #c4c4c4;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+        font-family: 'Oswald';
+    }
+
+}
