@@ -54,7 +54,6 @@ function Header() {
                                     <div className="submenu">
                                         <ul className="dropdown">
                                             <li><NavLink to="/our-team">Our Team</NavLink></li>
-                                            <li><NavLink to="/testimonial">Testimonial</NavLink></li>
                                             <li><NavLink to="/404">404 Page</NavLink></li>
                                         </ul>
                                     </div>
@@ -66,7 +65,7 @@ function Header() {
                                     </NavLink>
                                 </li>
                                 <li>
-                                  <a href="/" className="button button-primary">Join Now 
+                                  <a href="/" className="button button-primary mt-3 mt-lg-0">Join Now 
                                     <FontAwesomeIcon className="ms-2" icon={faArrowRight} />
                                   </a>
                                 </li>

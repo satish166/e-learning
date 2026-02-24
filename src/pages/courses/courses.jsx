@@ -1,9 +1,6 @@
-
 import React, { useMemo, useRef, useState } from "react";
 
 import carousel1 from './../../assets/images/carousel-1.jpg';
-import carousel2 from './../../assets/images/carousel-2.jpg';
-import about from './../../assets/images/about.jpg';
 import cat1 from './../../assets/images/cat-1.jpg';
 import cat2 from './../../assets/images/cat-2.jpg';
 import cat3 from './../../assets/images/cat-3.jpg';
@@ -23,11 +20,7 @@ import testimonial4 from './../../assets/images/testimonial-4.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
-    faGraduationCap,
-    faGlobe,
-    faHouseChimney,
-    faBookOpen,
-    faArrowRight,
+    faAngleRight,
     faStar,
     faStarHalf,
     faUser,
@@ -35,20 +28,15 @@ import {
     faClock
 } from '@fortawesome/free-solid-svg-icons';
 
-import {
-    faFacebookF,
-    faTwitter,
-    faInstagram
-} from '@fortawesome/free-brands-svg-icons';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import './home.scss';
 
+import './courses.scss';
 
-function HomePage() {
+function Courses() {
 
 
 
@@ -114,145 +102,20 @@ function HomePage() {
 
     return (
         <>
-            <div className="homepage">
-                <section className="main-banner">
-                    <div id="carouselExample" className="carousel slide">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <div className="banner-item">
-                                    <div className="banner-image">
-                                        <img className="w-100" src={carousel1} alt="brand logo" />
-                                    </div>
-                                    <div className="banner-content">
-                                        <div v className="banner-main">
-                                            <h1>Get Educated Online From Your Home</h1>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                                Vero molestias nesciunt numquam placeat,
-                                                facere mollitia ratione ipsa soluta repellendus quibusdam saepe minus laudantium,
-                                                at neque quaerat voluptatum voluptatem corporis omnis!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="carousel-item">
-                                <div className="banner-item">
-                                    <div className="banner-image">
-                                        <img className="w-100" src={carousel2} alt="brand logo" />
-                                    </div>
-                                    <div className="banner-content">
-                                        <div v className="banner-main">
-                                            <h1>Get Educated Online From Your Home</h1>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                                Vero molestias nesciunt numquam placeat,
-                                                facere mollitia ratione ipsa soluta repellendus quibusdam saepe minus laudantium,
-                                                at neque quaerat voluptatum voluptatem corporis omnis!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="carousel-action">
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Next</span>
-                            </button>
+            <section className="about-us">
+                <div className="main-image-section">
+                    <img className="w-100" src={carousel1} alt="About IMage" />
+                    <div className="main-content">
+                        <h1>Courses</h1>
+                        <div className="breadcrumbs">
+                            <ul>
+                                <li><a href="/">Home <FontAwesomeIcon icon={faAngleRight} /></a></li>
+                                <li className="current-page">Courses</li>
+                            </ul>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <section className="services">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-6 col-lg-3">
-                                <div className="service-content">
-                                    <div className="service-image">
-                                        <FontAwesomeIcon icon={faGraduationCap} />
-                                    </div>
-                                    <h4>Skilled Instructors</h4>
-                                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="service-content">
-                                    <div className="service-image">
-                                        <FontAwesomeIcon icon={faGlobe} />
-                                    </div>
-                                    <h4>Online Classes</h4>
-                                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="service-content">
-                                    <div className="service-image">
-                                        <FontAwesomeIcon icon={faHouseChimney} />
-                                    </div>
-                                    <h4>Home Projects</h4>
-                                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="service-content">
-                                    <div className="service-image">
-                                        <FontAwesomeIcon icon={faBookOpen} />
-                                    </div>
-                                    <h4>Book Library</h4>
-                                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-                <section className="about-us">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-md-6">
-                                <div className="about-image">
-                                    <img className="w-100" src={about} alt="brand logo" />
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="about-content">
-                                    <h6 className="heading-secondary">About Us</h6>
-                                    <h2>Welcome to eLEARNING</h2>
-                                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <div className="about-list">
-                                        <ul>
-                                            <li><p><FontAwesomeIcon className="ms-2" icon={faArrowRight} />
-                                                Skilled Instructors</p>
-                                            </li>
-                                            <li><p><FontAwesomeIcon className="ms-2" icon={faArrowRight} />
-                                                Skilled Instructors</p>
-                                            </li>
-                                            <li><p><FontAwesomeIcon className="ms-2" icon={faArrowRight} />
-                                                Skilled Instructors</p>
-                                            </li>
-                                            <li><p><FontAwesomeIcon className="ms-2" icon={faArrowRight} />
-                                                Skilled Instructors</p>
-                                            </li>
-                                            <li><p><FontAwesomeIcon className="ms-2" icon={faArrowRight} />
-                                                Skilled Instructors</p>
-                                            </li>
-                                            <li><p><FontAwesomeIcon className="ms-2" icon={faArrowRight} />
-                                                Skilled Instructors</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="action">
-                                        <a href="#" className="button button-primary">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 <section className="categories">
                     <h6 className="heading-primary">Categories</h6>
@@ -484,119 +347,6 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className="instructors">
-                    <h6 className="heading-primary">Instructors</h6>
-                    <h2 className="mb-5">Expert Instructors</h2>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-6 col-lg-3">
-                                <div className="instructor-card">
-                                    <div className="instructor-image">
-                                        <div className="image">
-                                            <img className="w-100" src={team1} alt="instructor" />
-                                        </div>
-                                        <div className="instructor-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="instructor-content">
-                                        <h4>Instructor Name</h4>
-                                        <span className="mt-2">Web Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="instructor-card">
-                                    <div className="instructor-image">
-                                        <div className="image">
-                                            <img className="w-100" src={team2} alt="instructor" />
-                                        </div>
-                                        <div className="instructor-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="instructor-content">
-                                        <h4>Instructor Name</h4>
-                                        <span className="mt-2">Web Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="instructor-card">
-                                    <div className="instructor-image">
-                                        <div className="image">
-                                            <img className="w-100" src={team3} alt="instructor" />
-                                        </div>
-                                        <div className="instructor-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="instructor-content">
-                                        <h4>Instructor Name</h4>
-                                        <span className="mt-2">Web Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="instructor-card">
-                                    <div className="instructor-image">
-                                        <div className="image">
-                                            <img className="w-100" src={team4} alt="instructor" />
-                                        </div>
-                                        <div className="instructor-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="instructor-content">
-                                        <h4>Instructor Name</h4>
-                                        <span className="mt-2">Web Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 <section className="testimonial">
                     <h6 className="heading-primary">Testimonial</h6>
                     <h2 className="mb-5">Our Students Say!</h2>
@@ -626,17 +376,17 @@ function HomePage() {
                                                                             className="hero"
                                                                         />
                                                                     </div>
-                                                            )}
-                                                                
+                                                                )}
+
                                                                 <h4 className="title">{item.ClientName}</h4>
                                                             </div>
 
                                                             <p className="desc">{item.profession}</p>
-                                                            
+
                                                             <div className="para">
                                                                 <p className="name">{item.paragraph}</p>
                                                             </div>
-                                                            
+
 
                                                         </article>
                                                     </div>
@@ -666,8 +416,8 @@ function HomePage() {
                         </div>
                     </div>
                 </section>
-            </div>
+            </section>
         </>
     );
 }
-export default HomePage;
+export default Courses;

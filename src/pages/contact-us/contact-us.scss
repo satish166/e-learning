@@ -1,7 +1,44 @@
 @use '../../styles/components/variables' as *;
 @use '../../styles/components/mixin' as *;
 
-.contact-us-page {
-   
+.contact-us {
+    padding-block: 100px;
+    text-align: center;
 
+    .get-in-touch {
+        p {
+            color: $black;
+            font-size: 14px;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+    }
+
+    .address {
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                svg {
+                    height: 20px;
+                    width: 20px;
+                    color: $white;
+                    background: $primary;
+                    padding: 15px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                h6 {
+                    font-size: 15px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }
