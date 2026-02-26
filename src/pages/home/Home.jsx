@@ -125,8 +125,8 @@ function HomePage() {
                                     </div>
                                     <div className="banner-content">
                                         <div v className="banner-main">
-                                            <h1>Get Educated Online From Your Home</h1>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            <h1 data-aos="fade-up" data-aos-delay="300">Get Educated Online From Your Home</h1>
+                                            <p data-aos="fade-up" data-aos-delay="400">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                                 Vero molestias nesciunt numquam placeat,
                                                 facere mollitia ratione ipsa soluta repellendus quibusdam saepe minus laudantium,
                                                 at neque quaerat voluptatum voluptatem corporis omnis!</p>
@@ -141,8 +141,8 @@ function HomePage() {
                                     </div>
                                     <div className="banner-content">
                                         <div v className="banner-main">
-                                            <h1>Get Educated Online From Your Home</h1>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            <h1 data-aos="fade-up" data-aos-delay="300">Get Educated Online From Your Home</h1>
+                                            <p data-aos="fade-up" data-aos-delay="400">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                                 Vero molestias nesciunt numquam placeat,
                                                 facere mollitia ratione ipsa soluta repellendus quibusdam saepe minus laudantium,
                                                 at neque quaerat voluptatum voluptatem corporis omnis!</p>
@@ -165,10 +165,10 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className="services">
+                <section className="services" data-aos="fade-up" data-aos-delay="300">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                                 <div className="service-content">
                                     <div className="service-image">
                                         <FontAwesomeIcon icon={faGraduationCap} />
@@ -177,7 +177,7 @@ function HomePage() {
                                     <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                                 <div className="service-content">
                                     <div className="service-image">
                                         <FontAwesomeIcon icon={faGlobe} />
@@ -186,7 +186,7 @@ function HomePage() {
                                     <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                                 <div className="service-content">
                                     <div className="service-image">
                                         <FontAwesomeIcon icon={faHouseChimney} />
@@ -195,7 +195,7 @@ function HomePage() {
                                     <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                                 <div className="service-content">
                                     <div className="service-image">
                                         <FontAwesomeIcon icon={faBookOpen} />
@@ -209,15 +209,15 @@ function HomePage() {
                 </section>
 
 
-                <section className="about-us">
+                <section className="about-us overflow-hidden">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-md-6">
+                            <div className="col-md-6" data-aos="fade-right" data-aos-delay="400">
                                 <div className="about-image">
                                     <img className="w-100" src={about} alt="brand logo" />
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6" data-aos="fade-left" data-aos-delay="400">
                                 <div className="about-content">
                                     <h6 className="heading-secondary">About Us</h6>
                                     <h2>Welcome to eLEARNING</h2>
@@ -256,12 +256,12 @@ function HomePage() {
 
                 <section className="categories">
                     <h6 className="heading-primary">Categories</h6>
-                    <h2 className="mb-5">Courses Categories</h2>
+                    <h2 className="mb-5" data-aos="fade-up" data-aos-delay="500">Courses Categories</h2>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-7">
+                            <div className="col-md-7" data-aos="fade-up" data-aos-delay="400">
                                 <div className="gallery">
-                                    <div className="row">
+                                    <div className="row" >
                                         <div className="col-12">
                                             <div className="image-section">
                                                 <div className="image">
@@ -298,7 +298,7 @@ function HomePage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-5">
+                            <div className="col-md-5" data-aos="fade-up" data-aos-delay="400">
                                 <div className="image-section h-100">
                                     <div className="image h-100">
                                         <img className="w-100 h-100" src={cat4} alt="brand logo" />
@@ -313,14 +313,14 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className="courses">
+                <section className="courses" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Courses</h6>
                     <h2 className="mb-5">Popular Courses</h2>
 
                     <div className="container">
                         <div className="row justify-content-center">
 
-                            <div className="col-md-6 col-lg-4">
+                            <div className="col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="400">
                                 <div className="course-card">
                                     <div className="card-image">
                                         <div className="image">
@@ -373,7 +373,7 @@ function HomePage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-4">
+                            <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
                                 <div className="course-card">
                                     <div className="card-image">
                                         <div className="image">
@@ -426,7 +426,7 @@ function HomePage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-4">
+                            <div className="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="400">
                                 <div className="course-card">
                                     <div className="card-image">
                                         <div className="image">
@@ -484,12 +484,12 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className="instructors">
+                <section className="instructors" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Instructors</h6>
                     <h2 className="mb-5">Expert Instructors</h2>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -515,7 +515,7 @@ function HomePage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -541,7 +541,7 @@ function HomePage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -567,7 +567,7 @@ function HomePage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-left" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -597,7 +597,7 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className="testimonial">
+                <section className="testimonial" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Testimonial</h6>
                     <h2 className="mb-5">Our Students Say!</h2>
                     <div className="container">

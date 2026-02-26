@@ -46,7 +46,7 @@ function OurTeam() {
                     <h2 className="mb-5">Expert Instructors</h2>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -72,7 +72,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -98,7 +98,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -124,7 +124,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-left" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -150,7 +150,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -176,7 +176,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -202,7 +202,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -228,7 +228,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-left" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -254,7 +254,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -280,7 +280,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -306,7 +306,7 @@ function OurTeam() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -333,7 +333,7 @@ function OurTeam() {
                                 </div>
                             </div>
                             
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-left" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">

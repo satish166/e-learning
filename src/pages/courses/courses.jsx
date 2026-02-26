@@ -108,7 +108,7 @@ function Courses() {
                     <div className="main-content">
                         <h1>Courses</h1>
                         <div className="breadcrumbs">
-                            <ul>
+                            <ul data-aos="fade-up" data-aos-delay="400">
                                 <li><a href="/">Home <FontAwesomeIcon icon={faAngleRight} /></a></li>
                                 <li className="current-page">Courses</li>
                             </ul>
@@ -117,11 +117,11 @@ function Courses() {
                 </div>
 
 
-                <section className="categories">
+                <section className="categories" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Categories</h6>
                     <h2 className="mb-5">Courses Categories</h2>
                     <div className="container">
-                        <div className="row">
+                        <div className="row" data-aos="fade-up" data-aos-delay="400">
                             <div className="col-md-7">
                                 <div className="gallery">
                                     <div className="row">
@@ -176,14 +176,14 @@ function Courses() {
                     </div>
                 </section>
 
-                <section className="courses">
+                <section className="courses" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Courses</h6>
                     <h2 className="mb-5">Popular Courses</h2>
 
                     <div className="container">
                         <div className="row justify-content-center">
 
-                            <div className="col-md-6 col-lg-4">
+                            <div className="col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="400">
                                 <div className="course-card">
                                     <div className="card-image">
                                         <div className="image">
@@ -236,7 +236,7 @@ function Courses() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-4">
+                            <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
                                 <div className="course-card">
                                     <div className="card-image">
                                         <div className="image">
@@ -289,7 +289,7 @@ function Courses() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-4">
+                            <div className="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="400">
                                 <div className="course-card">
                                     <div className="card-image">
                                         <div className="image">
@@ -347,7 +347,7 @@ function Courses() {
                     </div>
                 </section>
 
-                <section className="testimonial">
+                <section className="testimonial" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Testimonial</h6>
                     <h2 className="mb-5">Our Students Say!</h2>
                     <div className="container">
