@@ -313,7 +313,7 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className="courses" data-aos="fade-up" data-aos-delay="400">
+                <section className="courses overflow-hidden" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Courses</h6>
                     <h2 className="mb-5">Popular Courses</h2>
 
@@ -484,7 +484,7 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className="instructors" data-aos="fade-up" data-aos-delay="400">
+                <section className="instructors overflow-hidden" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Instructors</h6>
                     <h2 className="mb-5">Expert Instructors</h2>
                     <div className="container">

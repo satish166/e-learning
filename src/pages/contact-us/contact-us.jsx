@@ -14,7 +14,7 @@ import {
 function ContactUs() {
     return (
         <>
-          <section className="contact-us">
+          <section className="contact-us overflow-hidden">
             <div className="container">
               <h6 className="heading-primary">Contact Us</h6>
               <h2 className="mb-5">Contact For Any Query</h2>

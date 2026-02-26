@@ -41,7 +41,7 @@ function OurTeam() {
                     </div>
                 </div>
 
-                <section className="instructors">
+                <section className="instructors overflow-hidden">
                     <h6 className="heading-primary">Instructors</h6>
                     <h2 className="mb-5">Expert Instructors</h2>
                     <div className="container">

@@ -176,7 +176,7 @@ function Courses() {
                     </div>
                 </section>
 
-                <section className="courses" data-aos="fade-up" data-aos-delay="400">
+                <section className="courses overflow-hidden" data-aos="fade-up" data-aos-delay="400">
                     <h6 className="heading-primary">Courses</h6>
                     <h2 className="mb-5">Popular Courses</h2>
 
