@@ -26,7 +26,7 @@ function AboutUs() {
                     <div className="main-content">
                         <h1>About US</h1>
                         <div className="breadcrumbs">
-                            <ul>
+                            <ul data-aos="fade-up" data-aos-delay="400">
                                 <li><a href="/">Home <FontAwesomeIcon icon={faAngleRight} /></a></li>
                                 <li className="current-page">About</li>
                             </ul>
@@ -34,10 +34,10 @@ function AboutUs() {
                     </div>
                 </div>
 
-                <section className="services">
+                <section className="services" data-aos="fade-up" data-aos-delay="400">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="service-content">
                                     <div className="service-image">
                                         <FontAwesomeIcon icon={faGraduationCap} />
@@ -46,7 +46,7 @@ function AboutUs() {
                                     <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="service-content">
                                     <div className="service-image">
                                         <FontAwesomeIcon icon={faGlobe} />
@@ -55,7 +55,7 @@ function AboutUs() {
                                     <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="service-content">
                                     <div className="service-image">
                                         <FontAwesomeIcon icon={faHouseChimney} />
@@ -64,7 +64,7 @@ function AboutUs() {
                                     <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="service-content">
                                     <div className="service-image">
                                         <FontAwesomeIcon icon={faBookOpen} />
@@ -83,7 +83,7 @@ function AboutUs() {
                     <h2 className="mb-5">Expert Instructors</h2>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -109,7 +109,7 @@ function AboutUs() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -135,7 +135,7 @@ function AboutUs() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">
@@ -161,7 +161,7 @@ function AboutUs() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-3">
+                            <div className="col-md-6 col-lg-3" data-aos="fade-left" data-aos-delay="400">
                                 <div className="instructor-card">
                                     <div className="instructor-image">
                                         <div className="image">

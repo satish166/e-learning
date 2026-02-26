@@ -19,7 +19,7 @@ function ContactUs() {
               <h6 className="heading-primary">Contact Us</h6>
               <h2 className="mb-5">Contact For Any Query</h2>
               <div className="row">
-                  <div className="col-lg-4">
+                  <div className="col-lg-4" data-aos="fade-right" data-aos-delay="400">
                     <div className="get-in-touch text-start">
                       <h4 className="">Get In Touch</h4>
                       <p className="mt-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. Download Now.</p>
@@ -51,10 +51,10 @@ function ContactUs() {
                     </div>
                   </div>
 
-                  <div className="col-md-6 col-lg-4">
+                  <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
                     <EmbedMap  />
                   </div>
-                  <div className="col-md-6 col-lg-4">
+                  <div className="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="400">
                     <div className="contact-us-form">
                       <div className="row">
                         <div className="col">
