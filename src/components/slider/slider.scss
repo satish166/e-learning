@@ -1,0 +1,126 @@
+@use '../../styles/components/variables' as *;
+@use '../../styles/components/mixin' as *;
+
+
+.testimonial {
+        text-align: center;
+
+        .testimonial-slider {
+            overflow: hidden;
+
+            .slider-container {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0;
+                    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                    z-index: 1;
+                    width: 300px;
+
+                    @include media-breakpoint-down-lg {
+                        width: 200px;
+                    }
+
+                    @include media-breakpoint-down-md {
+                        width: 0;
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 0;
+                    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                    z-index: 1;
+                    width: 300px;
+
+                    @include media-breakpoint-down-lg {
+                        width: 200px;
+                    }
+
+                    @include media-breakpoint-down-md {
+                        width: 0;
+                    }
+                }
+
+                .slick-slider {
+                    .slick-slide {
+                        padding-inline: 20px;
+                        opacity: 0.5;
+
+                        .slide-card {
+                            .testimonial-image {
+                                .image-wrapper {
+                                    max-width: 100px;
+                                    border-radius: 50px;
+                                    overflow: hidden;
+                                    margin: auto;
+                                    border: 1px solid $gray2;
+                                    padding: 0;
+                                    height: 100px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    img {
+                                        margin: auto;
+                                        width: 85px;
+                                        object-fit: cover;
+                                        height: 85px;
+                                        border-radius: 50px;
+                                    }
+                                }
+                            }
+
+                            .para {
+                                margin-top: 20px;
+                                padding: 24px;
+                                transition: 0.8s;
+                                background-color: $shade-blue;
+                            }
+                        }
+
+                        &.slick-current {
+                            opacity: 1;
+
+                            .para {
+                                background-color: $primary;
+
+                                p {
+                                    color: $white;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .dots {
+                    margin-top: 20px;
+
+                    .dot {
+                        position: relative;
+                        display: inline-block;
+                        margin: 0 5px;
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid #CCCCCC;
+                        transition: .5s;
+
+                        &.active {
+                            background-color: $primary;
+                            border-color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }

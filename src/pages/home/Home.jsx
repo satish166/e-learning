@@ -46,6 +46,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import './home.scss';
+import SliderComp from "../../components/slider/slider";
 
 
 function HomePage() {
@@ -597,75 +598,7 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className="testimonial" data-aos="fade-up" data-aos-delay="400">
-                    <h6 className="heading-primary">Testimonial</h6>
-                    <h2 className="mb-5">Our Students Say!</h2>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="testimonial-slider">
-                                    <div className="slider-container">
-
-                                        <Slider ref={sliderRef} {...settings}>
-                                            {items.map((item, idx) => {
-                                                const isActive = idx === active;
-                                                return (
-                                                    <div key={item.id}>
-                                                        <article
-                                                            className={`slide-card ${isActive ? "is-active" : ""}`}
-                                                            style={{
-                                                                color: item.text,
-                                                            }}
-                                                        >
-                                                            <div className="testimonial-image">
-                                                                {item.image && (
-                                                                    <div className="image-wrapper">
-                                                                        <img
-                                                                            src={item.image}
-                                                                            alt={`${item.title} illustration`}
-                                                                            className="hero"
-                                                                        />
-                                                                    </div>
-                                                            )}
-                                                                
-                                                                <h4 className="title">{item.ClientName}</h4>
-                                                            </div>
-
-                                                            <p className="desc">{item.profession}</p>
-                                                            
-                                                            <div className="para">
-                                                                <p className="name">{item.paragraph}</p>
-                                                            </div>
-                                                            
-
-                                                        </article>
-                                                    </div>
-                                                );
-                                            })}
-                                        </Slider>
-
-
-
-                                        {/* Optional custom dots: one per item */}
-                                        <div className="dots">
-                                            {items.map((_, i) => (
-                                                <button
-                                                    key={i}
-                                                    className={`dot ${i === active ? "active" : ""}`}
-                                                    onClick={() => sliderRef.current?.slickGoTo(i)}
-                                                    aria-label={`Go to slide ${i + 1}`}
-                                                />
-                                            ))}
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <SliderComp />
             </div>
         </>
     );
